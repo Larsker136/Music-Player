@@ -10,7 +10,8 @@ let songNumber = 0;
 
 const songs = [
     "CROSSFADE",
-    "lov3"
+    "lov3",
+    "붕붕"
 ]
 
 function nextSong() {
