@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Larsker Music App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="player">
+        <h1>🎧 Larsker Music Player</h1>
+        
+        <div id="volumeControl">
+            <button class="button2" id="muteButton">🔈</button>
+            <input type="range" id="volumeSlider" min="0" max="1" step="0.05" value="0.3">
+        </div>
+        
+        <div class="controls">
+            <button class="button1" id="playButton" onclick="playPause()">▶</button>
+            <p id="currentTime">0:00</p>
+            <input type="range" id="progress" value="0">
+            <p id="totalTime">0:00</p>
+        </div>
+        
+        <div id="controls2">
+            <button class="button2" onclick="prevSong()">⏮</button>
+            <p id="title">CROSSFADE.mp3</p>
+            <button class="button2" onclick="nextSong()">⏭</button>
+        </div>
+        
+        <audio id="audio" src="music/crossfade.mp3"></audio>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
