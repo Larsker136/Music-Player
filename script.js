@@ -27,18 +27,29 @@ function loadSong(index) {
     let loc = "music/" + songs[index] + ".mp3";
     audio.src = loc;
     audio.play();
-    playButton.innerText = "❚❚";
+    playButton.innerHTML = 
+`<svg viewBox="0 0 24 24" width="24" height="30">
+    <rect x="6" y="4" width="4" height="16"></rect>
+    <rect x="14" y="4" width="4" height="16"></rect>
+</svg>`;
     title.innerText = songs[index] + ".mp3";
     isPlaying = true;
 }
 
 function playPause() {
     if (isPlaying) {
-        playButton.innerText = "▶";
+        playButton.innerHTML = 
+`<svg viewBox="0 0 24 24" width="24" height="30">
+    <polygon points="7,4 19,12 7,20"></polygon>
+</svg>`;
         audio.pause();
     }
     else {
-        playButton.innerText = "❚❚";
+        playButton.innerHTML = 
+`<svg viewBox="0 0 24 24" width="24" height="30">
+    <rect x="6" y="4" width="4" height="16"></rect>
+    <rect x="14" y="4" width="4" height="16"></rect>
+</svg>`;
         audio.play();
     }
     isPlaying = !isPlaying;
