@@ -16,16 +16,36 @@
         </div>
         
         <div class="controls">
-            <button class="button1" id="playButton" onclick="playPause()">▶</button>
+            <button class="button1" id="playButton" onclick="playPause()">
+                <svg viewBox="0 0 24 24" width="24" height="30">
+                    <polygon points="7,4 19,12 7,20"></polygon>
+                </svg>
+            </button>
             <p id="currentTime">0:00</p>
             <input type="range" id="progress" value="0">
             <p id="totalTime">0:00</p>
         </div>
         
         <div id="controls2">
-            <button class="button2" onclick="prevSong()">⏮</button>
+            <button class="button2" onclick="prevSong()">
+                <svg viewBox="0 0 24 24" width="30" height="30" fill="white">
+                    <rect x="4" y="5" width="3" height="14"></rect>
+
+                    <polygon points="13,6 7,12 13,18"></polygon>
+
+                    <polygon points="19,6 13,12 19,18"></polygon>
+                </svg>
+            </button>
             <p id="title">CROSSFADE.mp3</p>
-            <button class="button2" onclick="nextSong()">⏭</button>
+            <button class="button2" onclick="nextSong()">
+                <svg viewBox="0 0 24 24" width="30" height="30" fill="white">
+                    <rect x="17" y="5" width="3" height="14"></rect>
+    
+                    <polygon points="11,6 17,12 11,18"></polygon>
+    
+                    <polygon points="5,6 11,12 5,18"></polygon>
+                </svg>
+            </button>
         </div>
         
         <audio id="audio" src="music/crossfade.mp3"></audio>
