@@ -27,7 +27,7 @@ function loadSong(index) {
     let loc = "music/" + songs[index] + ".mp3";
     audio.src = loc;
     audio.play();
-    playButton.innerText = "⏸";
+    playButton.innerText = "❚❚";
     title.innerText = songs[index] + ".mp3";
     isPlaying = true;
 }
@@ -38,7 +38,7 @@ function playPause() {
         audio.pause();
     }
     else {
-        playButton.innerText = "⏸";
+        playButton.innerText = "❚❚";
         audio.play();
     }
     isPlaying = !isPlaying;
