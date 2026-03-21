@@ -12,7 +12,7 @@ const songs = [
     "CROSSFADE",
     "DIRT!",
     "lov3",
-    "붕붕"
+    "PUBLIC ENEMY"
 ]
 
 function nextSong() {
