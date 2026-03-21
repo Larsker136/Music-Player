@@ -10,6 +10,7 @@ let songNumber = 0;
 
 const songs = [
     "CROSSFADE",
+    "DIRT!",
     "lov3",
     "붕붕"
 ]
