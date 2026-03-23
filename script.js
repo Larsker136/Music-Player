@@ -1,7 +1,7 @@
 const audio = document.getElementById("audio");
 const progress = document.getElementById("progress");
-const playButton = document.getElementById("playButton");
 const currentTime = document.getElementById("currentTime");
+const playButton = document.getElementById("playButton");
 const totalTime = document.getElementById("totalTime");
 const title = document.getElementById("title")
 
@@ -12,7 +12,8 @@ const songs = [
     "CROSSFADE",
     "DIRT!",
     "lov3",
-    "PUBLIC ENEMY"
+    "PUBLIC ENEMY",
+    "MR. ROCKLEE"
 ]
 
 function nextSong() {
