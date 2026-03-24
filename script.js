@@ -13,7 +13,8 @@ const songs = [
     "DIRT!",
     "lov3",
     "PUBLIC ENEMY",
-    "MR. ROCKLEE"
+    "MR. ROCKLEE",
+    "꼴통"
 ]
 
 function nextSong() {
