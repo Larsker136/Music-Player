@@ -27,7 +27,7 @@ function prevSong() {
     loadSong(songNumber);
 }
 
-function loadSong(index) {hbuvfdcejnidcjenifvhubfvhubrty
+function loadSong(index) {
     let song = songs[index];
     let loc = "music/" + song.file + ".mp3";
     audio.src = loc;
