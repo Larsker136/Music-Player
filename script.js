@@ -9,13 +9,13 @@ let isPlaying = false;
 let songNumber = 0;
 
 const songs = [
-    "CROSSFADE",
-    "DIRT!",
-    "lov3",
-    "PUBLIC ENEMY",
-    "MR. ROCKLEE",
-    "꼴통"
-]
+    { file: "CROSSFADE", name: "CROSSFADE" },
+    { file: "DIRT!", name: "DIRT!" },
+    { file: "lov3", name: "lov3" },
+    { file: "PUBLIC ENEMY", name: "PUBLIC ENEMY" },
+    { file: "MR. ROCKLEE", name: "MR. ROCKLEE" },
+    { file: "kkoltong", name: "꼴통" }
+];
 
 function nextSong() {
     songNumber = (songNumber + 1) % songs.length;
@@ -28,7 +28,8 @@ function prevSong() {
 }
 
 function loadSong(index) {
-    let loc = "music/" + encodeURI(songs[index]) + ".mp3";
+    let song = songs[index];
+    let loc = "music/" + song.file + ".mp3";
     audio.src = loc;
     audio.play();
     playButton.innerHTML = 
@@ -36,7 +37,7 @@ function loadSong(index) {
     <rect x="6" y="4" width="4" height="16"></rect>
     <rect x="14" y="4" width="4" height="16"></rect>
 </svg>`;
-    title.innerText = songs[index] + ".mp3";
+    title.innerText = song.name+ ".mp3";
     isPlaying = true;
 }
 
