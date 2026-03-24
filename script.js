@@ -27,7 +27,7 @@ function prevSong() {
     loadSong(songNumber);
 }
 
-function loadSong(index) {
+function loadSong(index) {hbuvfdcejnidcjenifvhubfvhubrty
     let song = songs[index];
     let loc = "music/" + song.file + ".mp3";
     audio.src = loc;
@@ -79,6 +79,10 @@ audio.addEventListener("timeupdate", () => {
 progress.addEventListener("input", () => {
     audio.currentTime = (progress.value / 100) * audio.duration;
 });
+
+audio.addEventListener("ended", () => {
+    audio.play();
+})
 
 function formatTime(sec) {
     let minutes = Math.floor(sec / 60);
