@@ -28,7 +28,7 @@ function prevSong() {
 }
 
 function loadSong(index) {
-    let loc = "music/" + songs[index] + ".mp3";
+    let loc = "music/" + encodeURI(songs[index]) + ".mp3";
     audio.src = loc;
     audio.play();
     playButton.innerHTML = 
