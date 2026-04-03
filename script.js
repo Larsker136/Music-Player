@@ -15,7 +15,8 @@ const songs = [
     { file: "PUBLIC ENEMY", name: "PUBLIC ENEMY" },
     { file: "MR. ROCKLEE", name: "MR. ROCKLEE" },
     { file: "kkoltong", name: "꼴통" },
-    { file: "Ung Aeng Ung", name: "웅앵웅"}
+    { file: "Ung Aeng Ung", name: "웅앵웅"},
+    { file: "PUBLIC ENEMIES", name: "PUBLIC ENEMIES"}
 ];
 
 function nextSong() {
