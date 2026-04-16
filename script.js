@@ -17,7 +17,8 @@ const songs = [
     { file: "kkoltong", name: "꼴통" },
     { file: "Ung Aeng Ung", name: "웅앵웅"},
     { file: "PUBLIC ENEMIES", name: "PUBLIC ENEMIES"},
-    { file: "Musaka Talk", name: "지예아"}
+    { file: "Musaka Talk", name: "지예아"},
+    { file: "Naughty Talk", name: "지예아2"}
 ];
 
 function nextSong() {
